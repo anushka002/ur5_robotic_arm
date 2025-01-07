@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="ur5_transmissions">
+
+    <transmission name="joint_1_trans">
+        <plugin>transmission_interface/SimpleTransmission</plugin>
+        <actuator name="joint1_motor" role="joint1_motor" />
+        <joint name="joint_1" role="joint_1">
+            <mechanical_reduction>1.0</mechanical_reduction>
+        </joint>
+    </transmission>
+
+    <transmission name="joint_2_trans">
+        <plugin>transmission_interface/SimpleTransmission</plugin>
+        <actuator name="joint2_motor" role="joint2_motor" />
+        <joint name="joint_2" role="joint_2">
+            <mechanical_reduction>1.0</mechanical_reduction>
+        </joint>
+    </transmission>
+
+    <transmission name="joint_3_trans">
+        <plugin>transmission_interface/SimpleTransmission</plugin>
+        <actuator name="joint3_motor" role="joint3_motor" />
+        <joint name="joint_3" role="joint_3">
+            <mechanical_reduction>1.0</mechanical_reduction>
+        </joint>
+    </transmission>
+
+    <transmission name="joint_4_trans">
+        <plugin>transmission_interface/SimpleTransmission</plugin>
+        <actuator name="joint4_motor" role="joint4_motor" />
+        <joint name="joint_4" role="joint_4">
+            <mechanical_reduction>1.0</mechanical_reduction>
+        </joint>
+    </transmission>
+
+    <transmission name="joint_5_trans">
+        <plugin>transmission_interface/SimpleTransmission</plugin>
+        <actuator name="joint5_motor" role="joint5_motor" />
+        <joint name="joint_5" role="joint_5">
+            <mechanical_reduction>1.0</mechanical_reduction>
+        </joint>
+    </transmission>
+
+    <transmission name="joint_6_trans">
+        <plugin>transmission_interface/SimpleTransmission</plugin>
+        <actuator name="joint6_motor" role="joint6_motor" />
+        <joint name="joint_6" role="joint_6">
+            <mechanical_reduction>1.0</mechanical_reduction>
+        </joint>
+    </transmission>
+
+  </xacro:macro>
+
+</robot>
